@@ -12,7 +12,7 @@ use App\Http\Middleware\EnsureTenantAuthenticated;
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/validate-token', [AuthController::class, 'validateToken']);
 
-Route::middleware(['auth:tenant', 'check.token.expiry', EnsureTenantAuthenticated::class])->group(function () {
+Route::middleware([])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'index']);
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::get('/me', [AuthController::class, 'me']);

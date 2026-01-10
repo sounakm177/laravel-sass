@@ -15,21 +15,21 @@ class AppServiceProvider extends ServiceProvider
 
     public function boot(): void
     {
-        InitializeTenancyByRequestData::$header = 'X-Tenant'; 
-        InitializeTenancyByRequestData::$queryParameter = 'tenant';
+        // InitializeTenancyByRequestData::$header = 'X-Tenant'; 
+        // InitializeTenancyByRequestData::$queryParameter = 'tenant';
 
-        InitializeTenancyByRequestData::$onFail = function ($exception, $request, $next) {
-            $tenant = Tenant::where('name', $request->header('X-Tenant'))->first();
-            if (!$tenant) {
-                $tenant = Tenant::where('name', $request->query('tenant'))->first();
-            }
-            if (!$tenant) {
-                return response()->json(['error' => 'Tenant not found'], 404);
-            }
+        // InitializeTenancyByRequestData::$onFail = function ($exception, $request, $next) {
+        //     $tenant = Tenant::where('name', $request->header('X-Tenant'))->first();
+        //     if (!$tenant) {
+        //         $tenant = Tenant::where('name', $request->query('tenant'))->first();
+        //     }
+        //     if (!$tenant) {
+        //         return response()->json(['error' => 'Tenant not found'], 404);
+        //     }
 
-            tenancy()->initialize($tenant->id);
+        //     tenancy()->initialize($tenant->id);
 
-            return $next($request); 
-        };
+        //     return $next($request); 
+        // };
     }
 }
