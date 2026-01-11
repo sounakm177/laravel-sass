@@ -7,8 +7,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get project code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Run a simple command
-        run: php -v
+      - name: Install Composer dependencies
+        run: composer install
+
+      - name: Check Laravel
+        run: php artisan --version
