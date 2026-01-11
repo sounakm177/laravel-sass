@@ -1,0 +1,14 @@
+name: Simple Laravel CI
+
+on: push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get project code
+        uses: actions/checkout@v4
+
+      - name: Run a simple command
+        run: php -v
