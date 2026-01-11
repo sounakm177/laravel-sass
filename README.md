@@ -699,7 +699,7 @@ Contributions are welcome! Please follow these steps:
 
 ## 🔒 Security
 
-If you discover any security-related issues, please email the repository owner instead of using the issue tracker.
+If you discover any security-related issues,  please email the repository owner instead of using the issue tracker.
 
 ## 📝 License
 
