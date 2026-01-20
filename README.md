@@ -7,7 +7,7 @@ A modern, full-stack Software-as-a-Service (SaaS) platform built with Laravel. T
 ![MySQL](https://img.shields.io/badge/MySQL-5.7+-4479A1?style=flat-square&logo=mysql)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 
-## 📋 Table of Contents
+## 📋 Table of Contents 
 
 - [Overview](#overview)
 - [Features](#features)
@@ -25,7 +25,7 @@ A modern, full-stack Software-as-a-Service (SaaS) platform built with Laravel. T
 - [Contributing](#contributing)
 - [License](#license)
 
-## 🎯 Overview
+## Overview
 
 This Laravel SaaS application is designed as a complete solution for building Software-as-a-Service products. It includes all the essential features needed to launch and scale a SaaS business, from user authentication to subscription management.
 
